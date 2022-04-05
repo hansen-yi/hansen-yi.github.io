@@ -6,6 +6,13 @@
       body {
         font-family: Helvetica, sans-serif;
       }
+      .header {
+        background: red;
+        position: fixed;
+      }
+      #project-container {
+        margin: auto;
+      }
       #project {
         background-color: aliceblue; height: 40%; width: 15%; border: 1px solid black; align: center;
         margin: 20px;
@@ -14,22 +21,32 @@
     </style>
   </head>
 <body>
+  <div class = "header">
+    <a href = "index.html">Hansen Yi</a>
+    <a href = "/portfolio">Portfolio</a>
+  </div>
   <h1>Hansen Yi</h1>
   <h1>Featured Projects</h1>
+  <div id = "project-container">
   <div id = "project">
     <h3>Mini Maya </h3>
   </div>
   <div id = "project">
     <h3>Shader Fun</h3>
+  </div> 
   </div> <br>
+  <div id = "project-container">
   <div id = "project">
     <h3> J Compiler </h3>
   </div>
   <div id = "project">
     <h3>LC4 Simulator</h3>
+  </div> 
   </div> </br>
+  <div id = "project-container">
   <div id = "project">
     <h3> Public Service Announcement </h3>
+  </div>
   </div>
 </body>
 </html>
