@@ -1,52 +1,163 @@
 <!DOCTYPE html>
 <html>
   <head>
+<!--    <link rel="stylesheet" href="workshop_demo.css">-->
     <title>Hansen Yi</title>
     <style>
       body {
+        margin: 0;
+        margin-top: 0;
+        color: navy;
+        background: aliceblue;
         font-family: Helvetica, sans-serif;
       }
+      a {
+        color: navy;
+        text-decoration: none;
+      }
+      .header a:hover {
+        color: white;
+        /*text-decoration: none;*/
+      }
+      h1, h2 {
+        padding-left: 20px;
+        text-align: left;
+      }
+      h3 {
+        padding: 10px;
+        margin: 0px;
+      }
+      hr {
+        height: 1px;
+        background-color: navy;
+        border: none;
+      }
+      a.right {
+        float: right;
+        text-align: right;
+        padding-right: 10px;
+      }
       .header {
-        background: red;
-        position: fixed;
+        background: aqua;
+        /*position: fixed;*/
+        position: -webkit-sticky;
+        position: sticky;
+        padding: 10px;
+        font-size: 12px;
+        top: 0;
       }
       #project-container {
         margin: auto;
+        width: 85%;
+        text-align: center;
+        padding: 10px;
+        /*display: inline-block;*/
       }
       #project {
-        background-color: aliceblue; height: 40%; width: 15%; border: 1px solid black; align: center;
-        margin: 20px;
-        padding: 10px;
+        background: white;
+        /*background-blend-mode: screen;*/
+        height: 400px; width: 300px;
+        border: 2px solid navy;
+        border-radius: 5px;
+        text-align: center;
+        /*margin: 0px;*/
+        margin-inline: 30px;
+        padding: 15px;
+        /*display: inline-block;*/
+        display: inline-block;
+        vertical-align: middle;
+      }
+      #project:hover {
+        /*border: 0px;*/
+        border: 2px solid white;
+      }
+      .croppedWindow {
+        width: 300px;
+        height: 200px;
+        /*overflow: hidden;*/
+        object-fit: cover;
+        object-position: 50% 20%;
+      }
+      #description {
+        text-align: left;
+        padding-bottom: 10px;
       }
     </style>
   </head>
 <body>
   <div class = "header">
     <a href = "index.html">Hansen Yi</a>
-    <a href = "/portfolio">Portfolio</a>
+    <a href = "portfolio" class = "right">Portfolio</a>
+    <a href = "projects" class = "right">Projects</a>
+    <a href = "about" class = "right">About Me</a>
   </div>
-  <h1>Hansen Yi</h1>
   <h1>Featured Projects</h1>
   <div id = "project-container">
+    <h2>Graphics Projects</h2>
   <div id = "project">
-    <h3>Mini Maya </h3>
+    <h3>Mini Maya</h3>
+    <img src = miniMaya.jpg width = 300px></img>
+    <img src = miniMaya.png width = 300px></img>
+    <p id = "description">We created a very rudimentary version of the Maya software that would allow us to import and
+    edit mesh structures, in addition to loading and binding skeleton joints to the meshes.</p>
   </div>
   <div id = "project">
     <h3>Shader Fun</h3>
-  </div> 
+    <img src = shaderFun.png width = 300px></img>
+    <p id = "description">A CIS 460 project where we programmed portions of OpenGL's pipeline by writing differnt
+    vertex and fragment shaders to apply to the surfaces of given 3D models.</p>
+  </div>
+    <a href = "projects/sceneGraph.html">
+    <div id = "project">
+      <h3>Scene Graph</h3>
+      <img src = sceneGraph.png width = 300px></img>
+      <p id = "description">For this project we created a tree data structure where each node contained a transformation matrix and child
+      nodes would inherit their parents' transformations.</p>
+    </div>
+    </a>
+  </div>
+  <div id = "project-container">
+    <h2>Code Projects</h2>
+  <div id = "project">
+    <h3>J Compiler</h3><hr>
+    <img src = "jcompiler.png" width = 300px></img>
+    <p id = "description">In this project for CIS240, we were given the task of creating a compiler for a "new"
+    stack-based language J. The compiler is executed through the command line where it takes in a J file and outputs
+    an asm file.</p>
+  </div>
+  <div id = "project">
+    <h3>LC4 Simulator</h3><hr>
+    <img src = "lc4.png" width = 300px></img>
+    <p id = "description">For this CIS240 project, we had to create a program that had the functionality of an assembly
+    line simulator. The program takes in object files and outputs a text file with the instructions after having simulated
+    their execution.</p>
+  </div>
+    <div id = "project">
+      <h3>Paint</h3><hr>
+    </div>
   </div> <br>
   <div id = "project-container">
+    <h2>Art Projects</h2>
   <div id = "project">
-    <h3> J Compiler </h3>
+    <h3>Animated PSA Poster</h3><hr>
+    <img class = "croppedWindow" src = "PSA.png"></img>
+    <p id = "description">A class project for DSGN 264 where we had to create an animated public service annoucement poster.
+    The poster I created focused on the issue of littering and habitat destruction.</p>
   </div>
-  <div id = "project">
-    <h3>LC4 Simulator</h3>
-  </div> 
-  </div> </br>
-  <div id = "project-container">
-  <div id = "project">
-    <h3> Public Service Announcement </h3>
-  </div>
+    <div id = "project">
+      <h3>Public Art Intervention</h3><hr>
+      <img src = "publicArtIntervention.png" width = 300px></img>
+      <p id = "description">A group project done for my DSGN 264 final project. As a group, Mona Lee, Srinidhi Ramakrishna,
+      and I created a video proposing the creation of a public art intervention that would allow the public to better understand
+      the scale of a billion dollars.</p>
+    </div>
+    <div id = "project">
+      <h3>Killjoy Turret 3D Model</h3><hr>
+      <img src = "killjoyModel.jpg" width = "300px"></img>
+      <p id = "description">For my DSGN 235 Machine Project, I modeled the Killjoy's Turret from the Riot game, Valorant.
+      This is also my first 3D model so there was a lot of focus on creating geometry and developing a better understanding
+      on different modeling techniques.</p>
+    </div>
   </div>
 </body>
 </html>
