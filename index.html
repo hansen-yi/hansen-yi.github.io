@@ -1,88 +1,88 @@
 <!DOCTYPE html>
 <html>
   <head>
-<!--    <link rel="stylesheet" href="workshop_demo.css">-->
+    <link rel="stylesheet" href="main.css">
     <title>Hansen Yi</title>
-    <style>
-      body {
-        margin: 0;
-        margin-top: 0;
-        color: navy;
-        background: aliceblue;
-        font-family: Helvetica, sans-serif;
-      }
-      a {
-        color: navy;
-        text-decoration: none;
-      }
-      .header a:hover {
-        color: white;
-        /*text-decoration: none;*/
-      }
-      h1, h2 {
-        padding-left: 20px;
-        text-align: left;
-      }
-      h3 {
-        padding: 10px;
-        margin: 0px;
-      }
-      hr {
-        height: 1px;
-        background-color: navy;
-        border: none;
-      }
-      a.right {
-        float: right;
-        text-align: right;
-        padding-right: 10px;
-      }
-      .header {
-        background: aqua;
-        /*position: fixed;*/
-        position: -webkit-sticky;
-        position: sticky;
-        padding: 10px;
-        font-size: 12px;
-        top: 0;
-      }
-      #project-container {
-        margin: auto;
-        width: 85%;
-        text-align: center;
-        padding: 10px;
-        /*display: inline-block;*/
-      }
-      #project {
-        background: white;
-        /*background-blend-mode: screen;*/
-        height: 400px; width: 300px;
-        border: 2px solid navy;
-        border-radius: 5px;
-        text-align: center;
-        /*margin: 0px;*/
-        margin-inline: 30px;
-        padding: 15px;
-        /*display: inline-block;*/
-        display: inline-block;
-        vertical-align: middle;
-      }
-      #project:hover {
-        /*border: 0px;*/
-        border: 2px solid white;
-      }
-      .croppedWindow {
-        width: 300px;
-        height: 200px;
-        /*overflow: hidden;*/
-        object-fit: cover;
-        object-position: 50% 20%;
-      }
-      #description {
-        text-align: left;
-        padding-bottom: 10px;
-      }
-    </style>
+<!--    <style>-->
+<!--      body {-->
+<!--        margin: 0;-->
+<!--        margin-top: 0;-->
+<!--        color: navy;-->
+<!--        background: aliceblue;-->
+<!--        font-family: Helvetica, sans-serif;-->
+<!--      }-->
+<!--      a {-->
+<!--        color: navy;-->
+<!--        text-decoration: none;-->
+<!--      }-->
+<!--      .header a:hover {-->
+<!--        color: white;-->
+<!--        /*text-decoration: none;*/-->
+<!--      }-->
+<!--      h1, h2 {-->
+<!--        padding-left: 20px;-->
+<!--        text-align: left;-->
+<!--      }-->
+<!--      h3 {-->
+<!--        padding: 10px;-->
+<!--        margin: 0px;-->
+<!--      }-->
+<!--      hr {-->
+<!--        height: 1px;-->
+<!--        background-color: navy;-->
+<!--        border: none;-->
+<!--      }-->
+<!--      a.right {-->
+<!--        float: right;-->
+<!--        text-align: right;-->
+<!--        padding-right: 10px;-->
+<!--      }-->
+<!--      .header {-->
+<!--        background: aqua;-->
+<!--        /*position: fixed;*/-->
+<!--        position: -webkit-sticky;-->
+<!--        position: sticky;-->
+<!--        padding: 10px;-->
+<!--        font-size: 12px;-->
+<!--        top: 0;-->
+<!--      }-->
+<!--      #project-container {-->
+<!--        margin: auto;-->
+<!--        width: 85%;-->
+<!--        text-align: center;-->
+<!--        padding: 10px;-->
+<!--        /*display: inline-block;*/-->
+<!--      }-->
+<!--      #project {-->
+<!--        background: white;-->
+<!--        /*background-blend-mode: screen;*/-->
+<!--        height: 400px; width: 300px;-->
+<!--        border: 2px solid navy;-->
+<!--        border-radius: 5px;-->
+<!--        text-align: center;-->
+<!--        /*margin: 0px;*/-->
+<!--        margin-inline: 30px;-->
+<!--        padding: 15px;-->
+<!--        /*display: inline-block;*/-->
+<!--        display: inline-block;-->
+<!--        vertical-align: middle;-->
+<!--      }-->
+<!--      #project:hover {-->
+<!--        /*border: 0px;*/-->
+<!--        border: 2px solid white;-->
+<!--      }-->
+<!--      .croppedWindow {-->
+<!--        width: 300px;-->
+<!--        height: 200px;-->
+<!--        /*overflow: hidden;*/-->
+<!--        object-fit: cover;-->
+<!--        object-position: 50% 20%;-->
+<!--      }-->
+<!--      #description {-->
+<!--        text-align: left;-->
+<!--        padding-bottom: 10px;-->
+<!--      }-->
+<!--    </style>-->
   </head>
 <body>
   <div class = "header">
@@ -92,21 +92,25 @@
     <a href = "about" class = "right">About Me</a>
   </div>
   <h1>Featured Projects</h1>
-  <div id = "project-container">
+  <div class = "project-container">
     <h2>Graphics Projects</h2>
-  <div id = "project">
-    <h3>Mini Maya</h3>
-    <img src = miniMaya.jpg width = 300px></img>
-    <img src = miniMaya.png width = 300px></img>
-    <p id = "description">We created a very rudimentary version of the Maya software that would allow us to import and
-    edit mesh structures, in addition to loading and binding skeleton joints to the meshes.</p>
-  </div>
-  <div id = "project">
-    <h3>Shader Fun</h3>
-    <img src = shaderFun.png width = 300px></img>
-    <p id = "description">A CIS 460 project where we programmed portions of OpenGL's pipeline by writing differnt
-    vertex and fragment shaders to apply to the surfaces of given 3D models.</p>
-  </div>
+    <a href = "projects/miniMaya.html">
+      <div id = "project">
+        <h3>Mini Maya</h3>
+        <img src = miniMaya.jpg width = 300px></img>
+        <img src = miniMaya.png width = 300px></img>
+        <p id = "description">We created a very rudimentary version of the Maya software that would allow us to import and
+          edit mesh structures, in addition to loading and binding skeleton joints to the meshes.</p>
+      </div>
+    </a>
+    <a href = "projects/shaderFun.html">
+      <div id = "project">
+        <h3>Shader Fun</h3>
+        <img src = shaderFun.png width = 300px></img>
+        <p id = "description">A CIS 460 project where we programmed portions of OpenGL's pipeline by writing different
+          vertex and fragment shaders to apply to the surfaces of given 3D models.</p>
+      </div>
+    </a>
     <a href = "projects/sceneGraph.html">
     <div id = "project">
       <h3>Scene Graph</h3>
@@ -115,35 +119,48 @@
       nodes would inherit their parents' transformations.</p>
     </div>
     </a>
-  </div>
-  <div id = "project-container">
-    <h2>Code Projects</h2>
-  <div id = "project">
-    <h3>J Compiler</h3><hr>
-    <img src = "jcompiler.png" width = 300px></img>
-    <p id = "description">In this project for CIS240, we were given the task of creating a compiler for a "new"
-    stack-based language J. The compiler is executed through the command line where it takes in a J file and outputs
-    an asm file.</p>
-  </div>
-  <div id = "project">
-    <h3>LC4 Simulator</h3><hr>
-    <img src = "lc4.png" width = 300px></img>
-    <p id = "description">For this CIS240 project, we had to create a program that had the functionality of an assembly
-    line simulator. The program takes in object files and outputs a text file with the instructions after having simulated
-    their execution.</p>
-  </div>
-    <div id = "project">
-      <h3>Paint</h3><hr>
-    </div>
   </div> <br>
-  <div id = "project-container">
+  <div class = "project-container">
+    <h2>Code Projects</h2>
+    <a href = "projects/JCompiler.html">
+      <div id = "project">
+        <h3>J Compiler</h3><hr>
+        <img src = "jcompiler.png" width = 300px></img>
+        <p id = "description">In this project for CIS240, we were given the task of creating a compiler for a "new"
+          stack-based language J. The compiler is executed through the command line where it takes in a J file and outputs
+          an asm file.</p>
+      </div>
+    </a>
+    <a href = "projects/lc4Simulator.html">
+      <div id = "project">
+        <h3>LC4 Simulator</h3><hr>
+        <img src = "lc4.png" width = 300px></img>
+        <p id = "description">For this CIS240 project, we had to create a program that had the functionality of an assembly
+          line simulator. The program takes in object files and outputs a text file with the instructions after having simulated
+          their execution.</p>
+      </div>
+    </a>
+    <a href = "projects/paint.html">
+      <div id = "project">
+        <h3>Paint</h3><hr>
+        <img src = "paint.png" width = 300px></img>
+        <p id = "description">This was a project for CIS120 where we used OCaml to build a paint program using its GUI
+          toolkit.</p>
+      </div>
+    </a>
+
+  </div> <br>
+  <div class = "project-container">
     <h2>Art Projects</h2>
+    <a href = "portfolio/psa.html">
   <div id = "project">
     <h3>Animated PSA Poster</h3><hr>
     <img class = "croppedWindow" src = "PSA.png"></img>
-    <p id = "description">A class project for DSGN 264 where we had to create an animated public service annoucement poster.
+    <p id = "description">A class project for DSGN 264 where we had to create an animated public service announcement poster.
     The poster I created focused on the issue of littering and habitat destruction.</p>
   </div>
+    </a>
+    <a href = "portfolio/pai.html">
     <div id = "project">
       <h3>Public Art Intervention</h3><hr>
       <img src = "publicArtIntervention.png" width = 300px></img>
@@ -151,6 +168,8 @@
       and I created a video proposing the creation of a public art intervention that would allow the public to better understand
       the scale of a billion dollars.</p>
     </div>
+    </a>
+    <a href = "portfolio/killjoyTurret.html">
     <div id = "project">
       <h3>Killjoy Turret 3D Model</h3><hr>
       <img src = "killjoyModel.jpg" width = "300px"></img>
@@ -158,6 +177,10 @@
       This is also my first 3D model so there was a lot of focus on creating geometry and developing a better understanding
       on different modeling techniques.</p>
     </div>
-  </div>
+    </a>
+  </div> <br />
+<div class = "footer">
+
+</div>
 </body>
 </html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../main.css">
+    <title>Projects</title>
+    <style>
+        #project-container {
+            width: 100%;
+            /*text-align: center;*/
+            /*padding: 10px;*/
+            /*border: 1px solid black;*/
+            padding-bottom: 50px;
+        }
+        #main{
+            display: flex;
+            margin-top: 25px;
+         }
+        #projects {
+            display: flex;
+            width: 85%;
+            text-align: center;
+            /*padding: 10px;*/
+            /*border: 1px solid black;*/
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+<div class = "header">
+    <a href = "../index.html">Hansen Yi</a>
+    <a href = "../portfolio" class = "right">Portfolio</a>
+    <a href = "../projects" class = "right">Projects</a>
+    <a href = "../about" class = "right">About Me</a>
+</div>
+<h1>Projects</h1>
+<div class = "category">
+    <span class = "dot"></span>Graphics Projects
+    <span class = "dot"></span>Code Projects
+</div>
+<div id = main>
+    <div class = "left-space">
+        <div class ="year"><h3>2022</h3></div>
+        <div class ="year"><h3>2021</h3></div>
+<!--        <div class ="year"><h3>2020</h3></div>-->
+    </div>
+    <div id = "projects">
+        <div id = "project-container">
+            <div id = "project">
+                <h3>Mini Maya</h3>
+                <img src = ../miniMaya.jpg width = 300px></img>
+                <img src = ../miniMaya.png width = 300px></img>
+                <p id = "description">We created a very rudimentary version of the Maya software that would allow us to import and
+                    edit mesh structures, in addition to loading and binding skeleton joints to the meshes.</p>
+            </div>
+            <div id = "project">
+                <h3>Shader Fun</h3>
+                <img src = ../shaderFun.png width = 300px></img>
+                <p id = "description">A CIS 460 project where we programmed portions of OpenGL's pipeline by writing differnt
+                    vertex and fragment shaders to apply to the surfaces of given 3D models.</p>
+            </div>
+            <a href = "sceneGraph.html">
+                <div id = "project">
+                    <h3>Scene Graph</h3>
+                    <img src = ../sceneGraph.png width = 300px></img>
+                    <p id = "description">For this project we created a tree data structure where each node contained a transformation matrix and child
+                        nodes would inherit their parents' transformations.</p>
+                </div>
+            </a>
+                </div>
+<!--            <br />-->
+                <div id = "project-container">
+                    <div id = "project">
+                        <h3>J Compiler</h3><hr>
+                        <img src = "../jcompiler.png" width = 300px></img>
+                        <p id = "description">In this project for CIS240, we were given the task of creating a compiler for a "new"
+                            stack-based language J. The compiler is executed through the command line where it takes in a J file and outputs
+                            an asm file.</p>
+                    </div>
+                    <div id = "project">
+                        <h3>LC4 Simulator</h3><hr>
+                        <img src = "../lc4.png" width = 300px></img>
+                        <p id = "description">For this CIS240 project, we had to create a program that had the functionality of an assembly
+                            line simulator. The program takes in object files and outputs a text file with the instructions after having simulated
+                            their execution.</p>
+                    </div>
+                    <div id = "project">
+                        <h3>Paint</h3><hr>
+                        <img src = "../paint.png" width = 300px></img>
+                        <p id = "description">This was a project for CIS120 where we used OCaml to build a paint program using its GUI
+                            toolkit.</p>
+                    </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

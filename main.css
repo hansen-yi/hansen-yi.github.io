@@ -1,0 +1,208 @@
+body {
+    margin: 0;
+    margin-top: 0;
+    color: navy;
+    background: aliceblue;
+    font-family: Helvetica, sans-serif;
+}
+a {
+    color: navy;
+    text-decoration: none;
+}
+.header a:hover {
+    color: white;
+    /*text-decoration: none;*/
+}
+h1, h2 {
+    padding-left: 20px;
+    text-align: left;
+}
+h1 {
+    padding-left: 75px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+ }
+h3 {
+    padding: 10px;
+    margin: 0px;
+}
+hr {
+    height: 1px;
+    background-color: navy;
+    border: none;
+}
+a.right {
+    float: right;
+    text-align: right;
+    padding-right: 10px;
+}
+.header {
+    background: aqua;
+    /*position: fixed;*/
+    position: -webkit-sticky;
+    position: sticky;
+    padding: 10px;
+    font-size: 12px;
+    top: 0;
+}
+
+.footer {
+    display: flex;
+    text-align: center;
+}
+
+.project-container {
+    margin: auto;
+    width: 95%; /*original was 85, changed for art projects*/
+    text-align: center;
+    padding: 10px;
+    /*display: inline-block;*/
+}
+#project {
+    background: white;
+    /*background-blend-mode: screen;*/
+    height: 400px;
+    width: 300px;
+    border: 2px solid navy;
+    border-radius: 5px;
+    text-align: center;
+    /*margin: 0px;*/
+    margin-inline: 30px;
+    padding: 15px;
+    /*display: inline-block;*/
+    display: inline-block;
+    vertical-align: middle;
+}
+#project:hover {
+    /*border: 0px;*/
+    border: 2px solid white;
+}
+.croppedWindow {
+    width: 300px;
+    height: 200px;
+    /*overflow: hidden;*/
+    object-fit: cover;
+    object-position: 50% 20%;
+}
+#description {
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.main{
+    display: flex;
+}
+.left-space {
+    /*height: 100%;*/
+    width: 15%; /* was 15 before, play around
+    /*border: 2px solid white;*/
+}
+
+#project-description {
+    width: 70%;
+    /*padding: 10px;*/
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+    /*margin: 5px;*/
+    /*margin-left: 10%;*/
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-bottom: 2px;
+}
+.bubble {
+    border-radius: 7.5px;
+    /*border-style: solid;*/
+    background-color: red;
+    padding: 0 1%;
+    padding-top: 1px;
+    /*margin: 10px;*/
+    margin-left: 10px;
+}
+
+.year {
+    display: flex;
+    /*border: 1px solid black;*/
+    /*height: 25vh;*/
+    height: 434px;
+    font-size: 30px;
+    /*text-align: center;*/
+    justify-content: right;
+    /*color: white;*/
+    padding-bottom: 50px;
+    padding-right: 10px;
+    border-right: 1px solid navy;
+}
+
+.video {
+    padding: 1rem;
+}
+
+.category {
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+    margin-left: 10%;
+    /*vertical-align: center;*/
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*transform: translateY(-50%);*/
+}
+
+.arrow {
+    /*height: 450px;*/
+    /*display: block;*/
+    /*display: grid;*/
+    display: inline-flex;
+    /*display: table-cell;*/
+    align-items: center;
+    /*vertical-align: center;*/
+    /*align-content: center;*/
+    font-size: 72px;
+}
+
+.images {
+    display: block;
+    margin: 10px;
+}
+
+#portfolio-sentence {
+    /*margin: 0px;*/
+    margin-left: 10%;
+    padding-top: 10px;
+}
+#art_project {
+    background: white;
+    /*background-blend-mode: screen;*/
+    /*height: 400px;*/
+    /*width: 300px;*/
+    border: 2px solid navy;
+    border-radius: 5px;
+    text-align: center;
+    /*margin: 0px;*/
+    margin-inline: 25px;
+    padding: 15px;
+    /*display: inline-block;*/
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#photography_project {
+    background: white;
+    /*background-blend-mode: screen;*/
+    /*height: 400px;*/
+    /*width: 300px;*/
+    border: 2px solid navy;
+    border-radius: 5px;
+    text-align: center;
+    /*margin: 0px;*/
+    margin-inline: 10px;
+    padding: 15px;
+    /*display: inline-block;*/
+    display: inline-block;
+    vertical-align: middle;
+}
