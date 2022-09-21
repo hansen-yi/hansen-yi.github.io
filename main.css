@@ -57,6 +57,10 @@ a.right {
     text-align: center;
     padding: 10px;
     /*display: inline-block;*/
+    /*align: left;*/
+}
+.project-container h2 {
+    padding-left: 7.5%;
 }
 #project {
     background: white;
@@ -76,6 +80,18 @@ a.right {
 #project:hover {
     /*border: 0px;*/
     border: 2px solid white;
+}
+
+#empty-project {
+    /*background: white;*/
+    height: 400px;
+    width: 300px;
+    /*border: 2px solid navy;*/
+    /*border-radius: 5px;*/
+    margin-inline: 30px;
+    padding: 15px;
+    display: inline-block;
+    vertical-align: middle;
 }
 .croppedWindow {
     width: 300px;
