@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../main.css">
+    <title>Tetris</title>
+    <style>
+        .content{
+            /*padding-top: 20px;*/
+            /*padding-bottom: 20px;*/
+            /*vertical-align: center;*/
+            /*font-size: 72px;*/
+            /*align-text: center;*/
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class = "header">
+    <a href = "../index.html">Hansen Yi</a>
+    <a href = "../portfolio" class = "right">Portfolio</a>
+    <a href = "../projects" class = "right">Projects</a>
+    <a href = "../about" class = "right">About Me</a>
+</div>
+<h1>Tetris</h1>
+<div class = "category">
+    <span class = "dot"></span>Code Project
+</div>
+<div class = "main">
+    <div class = "left-space"></div>
+    <div class = "content">
+        <div class = "video">
+            <video height = "500" controls><source src = "Tetris.mp4" type="video/mp4"></video>
+        </div>
+        <!--        <br />-->
+        <span class = "bubble">Java</span>
+        <p id = "project-description">
+            A CIS 120 project where we utilized Java and the Swing GUI framework to construct a playable version of the game Tetris.
+            It supports multiple line clearing, displaying upcoming pieces, and allows for pausing or restarting.
+
+            It also supports saving, so if you exit the game and come back, your progress is saved.
+        </p>
+<!--        <div class = "video">-->
+            <video height = "500" controls><source src = "TetrisSave.mp4" type="video/mp4"></video>
+<!--        </div>-->
+        <p>
+            This is how the data is saved.
+        </p>
+        <span class="arrow">
+            <img src="Tetris_Save_Moment.jpg" height="500">
+            &#10132
+            <img src="TetrisSave.png" height="500">
+        </span>
+        <p>
+            Which means, theoretically, that data can be loaded in, like this:
+        </p>
+        <span class="arrow">
+            <img src="TetrisLoad.png" height="500">
+            &#10132
+            <video height = "500" controls><source src = "TetrisLoad.mp4" type="video/mp4"></video>
+        </span>
+        <br /> <br />
+        <a href="https://github.com/hansen-yi/CIS120Tetris">See code here</a>
+    </div>
+</div>
+
+</body>
+</html>

@@ -100,6 +100,13 @@ a.right {
     object-fit: cover;
     object-position: 50% 20%;
 }
+.croppedWindow2 {
+    width: 300px;
+    height: 200px;
+    /*overflow: hidden;*/
+    object-fit: cover;
+    object-position: 80% 95%;
+}
 #description {
     text-align: left;
     padding-bottom: 10px;
@@ -110,7 +117,7 @@ a.right {
 }
 .left-space {
     /*height: 100%;*/
-    width: 15%; /* was 15 before, play around
+    width: 15%; /* was 15 before, play around*/
     /*border: 2px solid white;*/
 }
 
