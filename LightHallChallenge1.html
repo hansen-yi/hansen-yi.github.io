@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Click Counter</title>
+</head>
+<body>
+  <p>Number of clicks so far: <span id="clickCount">0</span></p>
+  <button id="click">Click me!</button>
+
+  <script>
+    function setLocalStorageItem(key, value) {
+      localStorage.setItem(key, JSON.stringify(value));
+    }
+
+    function getLocalStorageItem(key) {
+      var value = localStorage.getItem(key);
+      return value ? JSON.parse(value) : null;
+    }
+
+    var click = document.getElementById('click');
+    var clickCount = document.getElementById('clickCount');
+
+    var currentClickCount = parseInt(getLocalStorageItem('clickCount')) || 0;
+
+    clickCount.textContent = currentClickCount;
+
+    click.addEventListener('click', function() {
+      currentClickCount++;
+
+      clickCount.textContent = currentClickCount;
+
+      setLocalStorageItem('clickCount', currentClickCount);
+    });
+  </script>
+</body>
+</html>
